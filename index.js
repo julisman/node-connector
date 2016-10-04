@@ -2,10 +2,15 @@
  * author : agung.julisman@yahoo.com
  *
  * */
-'use strict';
+'use strict'
 
 const Promise = require('bluebird')
 const request = require("request")
+
+/**
+ * Module exports.
+ * @public
+ */
 
 module.exports = {
     version: '1.0.0',
