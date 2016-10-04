@@ -1,6 +1,6 @@
 {
   "name": "ralali-connector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "module for connect to other service",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/julisman/ralali-connector/issues"
   },
-  "homepage": "https://github.com/julisman/ralali-connector#readme"
+  "homepage": "https://github.com/julisman/ralali-connector#readme",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "request": "^2.75.0"
+  }
 }
