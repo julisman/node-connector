@@ -1,0 +1,23 @@
+{
+  "name": "ralali-connector",
+  "version": "1.0.0",
+  "description": "module for connect to other service",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julisman/ralali-connector.git"
+  },
+  "keywords": [
+    "connector",
+    "service"
+  ],
+  "author": "Agung Julisman <agung.julisman@yahoo.com> (http://julisman.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julisman/ralali-connector/issues"
+  },
+  "homepage": "https://github.com/julisman/ralali-connector#readme"
+}
