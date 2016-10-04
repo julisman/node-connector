@@ -10,6 +10,13 @@ const request = require("request")
 module.exports = {
     version: '1.0.0',
 
+    /**
+     * Service fot method POST.
+     *
+     * @param  {String} url
+     * @param  {Json} data
+     * @return {Object} Callback status 'statusCode' and body 'response'
+     */
     postService: (url,data,callback) => {
         return new Promise(function (resolve,reject) {
             request({
@@ -18,11 +25,19 @@ module.exports = {
                 json: data
             },(error, response, body ) =>{
                 if (error) { return reject(error); }
-                resolve({status: response.statusCode, body : body});
-            });
-        }).nodeify(callback);
+                resolve({status: response.statusCode, body : body})
+            })
+        }).nodeify(callback)
     },
 
+    /**
+     * Service fot method GET.
+     *
+     * @param  {String} url
+     * @param  {Object} query
+     * @param  {String} auth
+     * @return {Object} Callback status 'statusCode' and body 'response'
+     */
     getService:(url,query,auth,callback) => {
         return new Promise(function (resolve,reject) {
             request({
@@ -34,9 +49,9 @@ module.exports = {
                 }
             },(error, response, body ) =>{
                 if (error) { return reject(error); }
-            resolve({status: response.statusCode, body : body});
-            });
-        }).nodeify(callback);
+            resolve({status: response.statusCode, body : body})
+            })
+        }).nodeify(callback)
     }
 }
 
