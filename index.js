@@ -29,7 +29,10 @@ module.exports = {
                 method: 'POST',
                 json: data
             },(error, response, body ) =>{
-                if (error) { return reject(error); }
+                if (error) {
+                    throw error
+                    return reject(error)
+                }
                 resolve({status: response.statusCode, body : body})
             })
         }).nodeify(callback)
@@ -53,7 +56,10 @@ module.exports = {
                     'Authorization': auth
                 }
             },(error, response, body ) =>{
-                if (error) { return reject(error); }
+                if (error) {
+                    throw error
+                    return reject(error)
+                }
             resolve({status: response.statusCode, body : body})
             })
         }).nodeify(callback)
