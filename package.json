@@ -1,6 +1,6 @@
 {
   "name": "ralali-connector",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "module for connect to other service",
   "main": "index.js",
   "scripts": {
