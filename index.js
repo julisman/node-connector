@@ -13,7 +13,7 @@ const request = require("request")
  */
 
 module.exports = {
-    version: '1.0.0',
+    version: '1.0.3',
 
     /**
      * Service fot method POST.
