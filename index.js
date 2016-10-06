@@ -30,8 +30,8 @@ module.exports = {
                 json: data
             },(error, response, body ) =>{
                 if (error) {
-                    throw error
                     return reject(error)
+                    throw error
                 }
                 resolve({status: response.statusCode, body : body})
             })
@@ -57,8 +57,8 @@ module.exports = {
                 }
             },(error, response, body ) =>{
                 if (error) {
-                    throw error
                     return reject(error)
+                    throw error
                 }
             resolve({status: response.statusCode, body : body})
             })
