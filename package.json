@@ -1,5 +1,5 @@
 {
-  "name": "ralali-connector",
+  "name": "node-connector",
   "version": "1.0.5",
   "description": "module for connect to other service",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/julisman/ralali-connector.git"
+    "url": "git+https://github.com/julisman/node-connector.git"
   },
   "keywords": [
     "connector",
@@ -17,9 +17,9 @@
   "author": "Agung Julisman <agung.julisman@yahoo.com> (http://julisman.com)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/julisman/ralali-connector/issues"
+    "url": "https://github.com/julisman/node-connector/issues"
   },
-  "homepage": "https://github.com/julisman/ralali-connector#readme",
+  "homepage": "https://github.com/julisman/node-connector#readme",
   "dependencies": {
     "bluebird": "^3.4.6",
     "request": "^2.75.0"
